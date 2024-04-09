@@ -37,10 +37,6 @@ p {
 }
 
 .summary__subtitle {
-    color: rgb(56, 117, 202);
-    margin-top: 2.5rem;
-}
-
-.summary__subtitle {
     color: rgb(71, 83, 100);
+    margin-top: 2.5rem;
 }
