@@ -26,7 +26,7 @@ function suggest(n_seats, butacas) {
     if (n_seats > N) {
         return seats;
     }
-    for (let ix = 0; ix < N && seats.size < n_seats; ix++) {
+    for (let ix = N - 1; ix >= 0 && seats.size < n_seats; ix--) {
         for (let iy = 0; iy < N && seats.size < n_seats && N - iy >= n_seats - seats.size; iy++) {
             if (!butacas[ix][iy].estado) {
                 seats.add(butacas[ix][iy].id);
