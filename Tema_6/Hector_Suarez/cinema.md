@@ -22,6 +22,6 @@
 | PATCH        | /api/usuarios/{id}    | N/A          | ``{"nombre": "Sebastian"}`` | N/A | 200, 400, 404, 500 |
 | DELETE        | /api/usuarios/{id}    | N/A          | N/A | N/A | 204, 404, 500 |
 | POST        | /api/reservas    | N/A          | ``{"butaca_id": 11, "sala_id": 1, "usuario_id": 123, "fecha": "2024-05-01", "horario": 15}`` | ``{"id": 123}`` | 201, 400, 500 |
-| POST        | /api/reservas/{id}/cancelar    | N/A          | N/A | N/A | 200, 400, 500 |
+| PATCH        | /api/reservas/{id}    | N/A | ``{"cancelar_reserva": true}`` | N/A | 200, 400, 500 |
 | PUT        | /api/reservas/{id}   | N/A          | ``{"butaca_id": 11, "sala_id": 1, "usuario_id": 123, "fecha": "2024-05-01", "horario": 15}`` | N/A | 200, 400, 404, 500 |
-| POST        | /api/reservas/{id}/registrarpago    | N/A          | ``{"pago": "10USD"}`` | N/A | 200, 400, 500 |
+| PATCH        | /api/reservas/{id}    | N/A          | ``{"pago": "10USD"}`` | N/A | 200, 400, 500 |
